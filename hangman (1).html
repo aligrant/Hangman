@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel= "stylesheet" href="./hangman.css">
+</head>
+<body id="body";>
+    <!-- What it will include:
+There will be a start button at the beginning
+Then there will be a word input
+Then the hangman screen will appear with litter spaces and letter buttons
+if person gets letter correct letters will appear in the space
+If person gets letter wrong then body part will appear 
+There will be a guess word button in which input box pops up, if input is correct the person is the winner 
+If the input is not correct then they die
+There will be a tally of tries
+when user makes mistake change image source
+ -->
+<div id = "frontPage">
+<h1 id = "title">HANGPERSON</h1>
+<h4 id = "rulesTitle">RULES</h4>
+<h3 id = "rules">PLAYER ONE inputs a single word and hint(optional). PLAYER TWO has 6 attempts to guess the word. If PLAYER TWO gets the correct word before the hangperson is compelete, they win. If they guess the incorrect word they lose. 
+    NO CHEATING
+</h3>
+<button id="startBtn" class="waves-effect waves-light btn-large" >START</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./hangman.js"></script>
+</body>
+</html>

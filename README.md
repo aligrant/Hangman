@@ -1,2 +1,2 @@
 # Hangman
- Old ICS3U project, 
+ Old ICS3U Project

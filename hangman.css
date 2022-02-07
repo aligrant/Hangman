@@ -1,0 +1,521 @@
+#image{
+    position: absolute;
+    right: 25px;
+    bottom: 225px;
+    width: 20%;
+    height: 60%;
+}
+#rules{
+    font-size:30px;
+    font-family: monospace;
+}
+#rulesTitle{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+#title{
+    font-family: fantasy;
+    font-size: 130px;
+}
+#guessWordBtn{
+    position: absolute;
+    right: 350px;
+    bottom: 60px;
+    font-size: 50px;
+    height: 75px;
+    width: 400px;
+    background-color: pink;
+    cursor: pointer;
+    font-weight: bold;
+}
+#replayBtn{
+    margin: 0;
+    margin-top: 175px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 75px;
+    width:200px;
+    background-color:pink;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 6px 7px 40px -4px  
+        rgba(0, 0, 0, 0.2); 
+}
+#correctWord{
+    color:white;
+    position: absolute;
+    top:50%;
+    left:40%;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#winnerBackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgb(4, 1, 31);
+}
+#winnerCard{
+    position: absolute;
+    color:white;
+    top:20%;
+    left:33%;
+    box-shadow: 5px 5px 50px 1px rgb(0, 255, 234);
+    border-radius: 30px;
+    font-size: 100px;
+}
+#loserBackground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgb(31, 1, 16);
+}
+#loserCard{
+    position: absolute;
+    color:white;
+    top:20%;
+    left:33%;
+    box-shadow: 5px 5px 50px 1px red;
+    border-radius: 30px;
+    font-size: 100px;
+}
+#frontPage{
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(31, 1, 16);
+}
+#startBtn{ 
+        margin: 0;
+        margin-top: 175px; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);/* I searched up how to center an element(not my original knowledge,-w3school)*/
+        height: 90px;
+        width:165px;
+        background-color:pink;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 6px 7px 40px -4px  
+            rgba(0, 0, 0, 0.2); 
+}
+
+#submitWord{
+    background-color: pink;
+    height: 70px;
+    width: 145px;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 25px;
+    box-shadow: 6px 7px 40px -4px /*When I was trying to find a way to do a ripple effect on a button(before i used materialise) I saw a boxshadow thing in their code so I encorporated it in to mine. (didn't know it existed)*/
+         rgba(0, 0, 0, 0.2); 
+    font-weight: bold;
+}
+#inputWord{
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:pink;
+    height: 70px;
+    width: 500px;
+    font-size: 50px;
+    color: rgb(31, 1, 16);
+    font-family: sans-serif;
+}
+#inputWord::placeholder{
+    color: rgba(31, 1, 16, 0.363);
+    font-family: sans-serif;
+
+}
+#inputHint{
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color:pink;
+    height: 70px;
+    width: 500px;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+#inputHint::placeholder{
+    color: rgba(31, 1, 16, 0.363);
+    font-family: sans-serif;
+}
+#guesscalc{
+    position: absolute;
+    left: 60px;
+    bottom:40px ;
+}
+#hint{
+    position: absolute;
+    right: 100px;
+    bottom: 60px;
+    font-size: 50px;
+    height: 75px;
+    width: 175px;
+    background-color: pink;
+    cursor: pointer;
+}
+#letterA{
+    position: absolute;
+    left: 20px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}   
+ #letterB{
+    position: absolute;
+    left: 65px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}    
+#letterC{
+    position: absolute;
+    left: 110px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterD{
+    position: absolute;
+    left: 155px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+    }        
+ #letterE{
+    position: absolute;
+    left: 200px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+    }    
+
+#letterF{
+    position: absolute;
+    left: 245px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+    }
+#letterG{
+    position: absolute;
+    left: 290px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+    }        
+#letterH{
+    position: absolute;
+    left: 335px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+    }    
+#letterI{
+    position: absolute;
+    left: 380px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;    
+}
+#letterJ{
+    position: absolute;
+    left: 425px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterK{
+    position: absolute;
+    left: 470px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterL{
+    position: absolute;
+    left: 515px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterM{
+    position: absolute;
+    left: 560px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterN{
+    position: absolute;
+    left: 605px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterO{
+    position: absolute;
+    left: 650px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterP{
+    position: absolute;
+    left: 695px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterQ{
+    position: absolute;
+    left: 740px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterR{
+    position: absolute;
+    left: 785px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterS{
+    position: absolute;
+    left: 830px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterT{
+    position: absolute;
+    left: 875px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterU{
+    position: absolute;
+    left: 920px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterV{
+    position: absolute;
+    left: 965px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterW{
+    position: absolute;
+    left: 1010px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterX{
+    position: absolute;
+    left: 1055px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterY{
+    position: absolute;
+    left: 1100px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#letterZ{
+    position: absolute;
+    left: 1145px;
+    bottom: 170px;
+    background-color: pink;
+    cursor: pointer;
+    height: 30px;
+    width:30px;
+    font-size: large;
+}
+#space0{
+    margin-top: 220px;
+    margin-left: 45px;
+    float:left;
+}
+#space1{
+    margin-top:220px;
+    margin-left:40px;
+    float:left;
+}
+#space2{
+    margin-top:220px;
+    margin-left:40px;
+    float:left;
+}
+#space3{
+    margin-top:220px;
+    margin-left:40px;
+    float:left;
+}
+#space4{
+    margin-top: 220px; 
+    margin-left:40px;
+    float: left;
+}
+#space5{
+    margin-top: 220px; 
+    margin-left:40px;
+    float: left;
+}
+#space6{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space7{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space8{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space9{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space10{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space11{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space12{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space13{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space14{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+#space15{
+    margin-top: 220px;
+    margin-left:40px;
+    float: left;
+}
+
+
